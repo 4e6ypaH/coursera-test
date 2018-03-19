@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ModApp">
+<html lang="en" ng-app="LunchCheck">
 <head>
 	<meta charset="UTF-8">
 	<script src="angular.min.js"></script>
@@ -10,11 +10,12 @@
 
 <body>
 	
-<div ng-controller = 'MsgController'>
-	{{name}} <br>
-	{{action}}
-<div>
-	<button ng-click = "Max">Max</button>
+	<div ng-controller='MsgController'>	
+		<input type="text" ng-model="name"> 
+	<div>
+	<button ng-click="Check">Check if it too much</button>
+	<br>
+	{{sayMessage()}}
 </div>	
 </div>	
 </body>
